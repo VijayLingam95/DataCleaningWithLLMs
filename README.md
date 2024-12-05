@@ -137,7 +137,10 @@ https://github.com/VijayLingam95/DataCleaningWithLLMs/blob/b2699911e2229ef478113
 The metrics are saved to an output file (`results_*.pkl`) and also displayed in the console log. For the error correction task, the LLM's output is additionally saved to a CSV file.
 
 ### Note
-The prompts in this work are designed to generate outputs in a specific format, supported by custom parsers we developed. Any changes to the prompts may necessitate adjustments or refinements to the parsers.
+The prompts in this work are designed to generate outputs in a specific format, supported by custom parsers we developed. Any changes to the prompts may necessitate adjustments or refinements to the parsers. 
+
+For efficiency, we use a BATCH prompting variant with BATCH_SIZE set to 5.
+
 
 
 
