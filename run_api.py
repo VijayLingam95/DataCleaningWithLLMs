@@ -136,6 +136,8 @@ def parse_response_correct(response, BS, num_columns):
             del bad_indices[0]
         else:
             del output[-1]
+    while len(output) < BS:
+        output.append(['']*num_columns)
 
     return output
     
